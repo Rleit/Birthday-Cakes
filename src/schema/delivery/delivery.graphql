@@ -1,0 +1,17 @@
+ type Query {
+ deliveriesToday(city: String): [Delivery]
+
+}
+
+
+# extend type Mutation {
+# }
+
+
+type Delivery {
+    cake: String
+    name: String
+    address: String
+    message: String
+}
+

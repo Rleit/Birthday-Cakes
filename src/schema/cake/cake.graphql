@@ -1,0 +1,21 @@
+ type Query {
+ cakeStock: Cakes
+
+}
+
+
+# extend type Mutation {
+# }
+
+
+type Cakes {
+    chocolate: Cake
+    redvelvet: Cake
+    cheesecake: Cake
+}
+
+type Cake {
+    # id: ID!
+    type: String
+    amount: String
+}

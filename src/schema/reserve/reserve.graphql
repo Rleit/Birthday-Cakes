@@ -1,0 +1,24 @@
+#  type Query {
+#  deliveriesToday(city: String): [Delivery]
+
+# }
+
+
+ type Mutation {
+ reserve(input: ReserveInput): Reserve
+}
+
+
+input ReserveInput {
+    cake: String
+    recipient: String
+    birthday: String
+    address: String
+    city: String
+    message: String
+}
+
+
+type Reserve {
+    cake: String
+}
