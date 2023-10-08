@@ -79,8 +79,16 @@ export function getApi(input, query, type) {
  * This process would have been cleaner with classing like in typescript
  * but compilers are a headache with graphql and es6/next
  */
+
+const header = {
+    Authorization: env.MOCKCAKERY_KEY,
+}
+
 export async function getCakery(get, query, type) {
-    const response = await fetch(getApi(get, query, type), { method: 'GET' })
+    const response = await fetch(getApi(get, query, type), {
+        method: 'GET',
+        headers: header,
+    })
     const data = await response.json()
 
     return data
@@ -90,6 +98,7 @@ export async function postCakery(post, input, type) {
     const response = await fetch(getApi(post, !type ? input : '', type), {
         method: 'POST',
         body: input,
+        headers: header,
     })
     const data = await response.json()
 
