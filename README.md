@@ -2,7 +2,8 @@
 
 Since I wanted to save time instead of learning something new with this task, I went back to what felt most comfortable, which is GraphQL API server with Apollo Server + Express.
 
-This API is aimed at the [Doorstep Birthday Cakes API documentation](https://doorstepbirthdaycakes.docs.apiary.io/), and its mock servers at [https://api.cakery.dev/api-docs/](https://api.cakery.dev/api-docs/) were missing reservations and deliveries to the same spec as on the original documentation.
+This API is aimed at the [Doorstep Birthday Cakes API documentation](https://doorstepbirthdaycakes.docs.apiary.io/), and its mock servers.
+The cakery.dev [https://api.cakery.dev/api-docs/](https://api.cakery.dev/api-docs/) were missing reservations and deliveries to the same spec as on the original documentation.
 
 To not spend hours on this, I focused on file structure organization and not the utilities to make the "getCakery" and "postCakery" dynamic.
 
@@ -10,16 +11,16 @@ To not spend hours on this, I focused on file structure organization and not the
 
 Install all packages with:
 
-npm i 
+```npm i ```
 
 Move example environment file to `.env`:
 
-mv .env.example .env
+```mv .env.example .env```
 
 
 Launch dev:
 
-npm run dev
+```npm run dev```
 
 
 # Ready-made playground links
